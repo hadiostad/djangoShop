@@ -7,7 +7,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class DiscountAdmin(admin.ModelAdmin):
-    list_display = ('code', 'discount')
+    list_display = ('code', 'discount', 'expire_date')
 
 
 admin.site.register(Products, ProductAdmin)

@@ -12,3 +12,4 @@ class Discount(models.Model):
     description = models.CharField(max_length=255)
     discount = models.FloatField()
     expire_date = models.DateField()
+
