@@ -1,11 +1,12 @@
 from django.db import models
 
-# create product model
+
 class Products(models.Model):
     name = models.CharField(max_length=255 )
     price = models.FloatField()
     stock = models.IntegerField()
-    image_url = models.CharField(max_length=2083)
+    image = models.ImageField(upload_to="products", null=True)
+
 
 class Discount(models.Model):
     code = models.CharField(max_length=10)
