@@ -4,6 +4,7 @@ from .models import Products, Discount
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'price', 'stock')
+    list_filter = ('name', 'price', 'stock')
 
 
 class DiscountAdmin(admin.ModelAdmin):
